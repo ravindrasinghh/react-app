@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Getting Started with React App
 
 This Project is running on 80 Port number, by changing the package.json you can use any other port as well.
 
 ### To run this Code,Please install below softwares/binaries:
 -------------------------------------------------------------
 -| https://nodejs.org/en/download/
+
+
 -| https://www.youtube.com/watch?v=PlGlTF2xYXE&t=65s
 
 ## Code Output For validation
