@@ -13,7 +13,7 @@ This Project is running on 80 Port number, by changing the package.json you can 
 ![alt text](docs/output.png)
 
 2. Server IP
-![alt text](docs/output.png)
+![alt text](docs/ec2-ip.png)
 
 ## Providers
 
