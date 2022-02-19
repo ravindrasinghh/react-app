@@ -25,10 +25,6 @@ This Project is running on 80 Port number, by changing the package.json you can 
 | <a name="provider_null"></a> [null](#provider\_null) | 3.1.0 |
 | <a name="provider_template"></a> [template](#provider\_template) | 2.2.0 |
 
-## Modules
-
-No modules.
-
 ## Resources
 
 | Name | Type |
