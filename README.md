@@ -1,70 +1,49 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project is running on 80 Port number, by changing the package.json you can use any other port as well.
 
-## Available Scripts
+### To run this Code,Please install below softwares/binaries:
+-------------------------------------------------------------
+-| https://nodejs.org/en/download/
+-| https://www.youtube.com/watch?v=PlGlTF2xYXE&t=65s
 
-In the project directory, you can run:
+## Code Output For validation
 
-### `npm start`
+1. Terraform apply IP:
+![alt text](docs/output.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Server IP
+![alt text](docs/output.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Providers
 
-### `npm test`
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.2.0 |
+| <a name="provider_null"></a> [null](#provider\_null) | 3.1.0 |
+| <a name="provider_template"></a> [template](#provider\_template) | 2.2.0 |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Modules
 
-### `npm run build`
+No modules.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Resources
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Name | Type |
+|------|------|
+| [aws_instance.web](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
+| [aws_security_group.sg_22](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [null_resource.install](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [template_file.react_setup](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Inputs
 
-### `npm run eject`
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_instance_map"></a> [instance\_map](#input\_instance\_map) | A map of key/value to the instance | `map(string)` | <pre>{<br>  "ami": "ami-0ef669c57b73af73b",<br>  "instance_type": "t3.medium",<br>  "key_name": "vm-mig",<br>  "subnet_id": "subnet-0f272dad513a7fffd"<br>}</pre> | no |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Outputs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Name | Description |
+|------|-------------|
+| <a name="output_instance_value"></a> [instance\_value](#output\_instance\_value) | n/a |
