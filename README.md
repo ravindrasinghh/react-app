@@ -38,7 +38,7 @@ This Project is running on 80 Port number, by changing the package.json you can 
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_instance_map"></a> [instance\_map](#input\_instance\_map) | A map of key/value to the instance | `map(string)` | <pre>{<br>  "ami": "ami-0ef669c57b73af73b",<br>  "instance_type": "t3.medium",<br>  "key_name": "vm-mig",<br>  "subnet_id": "subnet-0f272dad513a7fffd"<br>}</pre> | no |
+| <a name="input_instance_map"></a> [instance\_map](#input\_instance\_map) | A map of key/value to the instance | `map(string)` | <pre>{<br>  "ami": "ENTER AMI",<br>  "instance_type": "t3.medium",<br>  "key_name": "vm-mig",<br>  "subnet_id": "ENTER SUBNET"<br>}</pre> | no |
 
 ## Outputs
 
